@@ -303,11 +303,10 @@
     var dias = Math.floor(diff/(1000*60*60*24));
     var horas = Math.floor((diff/(1000*60*60))%24);
     var min = Math.floor((diff/(1000*60))%60);
-    var seg = Math.floor((diff/1000)%60);
     document.getElementById('c-dias').textContent = String(dias).padStart(2,'0');
     document.getElementById('c-hs').textContent = String(horas).padStart(2,'0');
     document.getElementById('c-min').textContent = String(min).padStart(2,'0');
-    document.getElementById('c-seg').textContent = String(seg).padStart(2,'0');
+  
   }
   actualizarTimer();
   setInterval(actualizarTimer, 1000);
